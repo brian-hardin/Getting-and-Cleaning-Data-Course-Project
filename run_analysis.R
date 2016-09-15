@@ -59,4 +59,4 @@ alldata <- cbind(xdata, ydata, subjectdata)
 
 tidyavgdata <- ddply(alldata, .(subject, activity), function(x) colMeans(x[, 1:66]))
 
-write.table(tidyavgdata, "tidyavgdata.txt", row.name=FALSE)
+write.table(tidyavgdata, "tidyavgdata.txt", row.name=FALSE) 
